@@ -1,38 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter";
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#profile__img {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+}
+
+#username {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#smallShareBtn {
+  border: 2px dashed #eaecf0;
+  padding: 20px 15px;
+  border-radius: 50%;
+  display: none;
+}
+
+#largeShareBtn {
+  display: inline-block;
+}
+
+.share_buttons {
+  position: absolute;
+  margin-left: 70%;
+  top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaecf0;
+  height: 76px;
+  min-width: 90vw;
+  border-radius: 8px;
+  border: 1px solid #eaecf0;
+  margin-top: 20px;
+}
+
+.links:hover {
+  background-color: #cccbcb;
+}
+
+.icons {
+  margin: 50px 0;
+}
+
+#slack__icon,
+#github__icon {
+  height: 20px;
+  width: auto;
+  margin: 0 10px;
+}
+
+.footer {
+  border-top: 1px solid #eaecf0;
+  width: 90vw;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footer__text {
+  font-size: small;
+  color: #6c6c6d;
+}
+
+.footer__entity {
+  margin: 5px 0;
+}
+@media screen and (max-width: 500px) {
+  #smallShareBtn {
+    border: 2px dashed #eaecf0;
+    padding: 20px 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #largeShareBtn {
+    display: none;
   }
+
+  /* body {
+    background: black;
+  } */
 }

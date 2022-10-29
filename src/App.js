@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./Footer";
+import Icons from "./Icons";
+import Links from "./Links";
+import Profile from "./Profile";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile />
+
+      <Links id="twitter" link="https://twitter.com" linkText="Twitter Link" />
+
+      <Links
+        id="btn__zuri"
+        link="https://training.zuri.team/"
+        linkText="Zuri Team"
+      />
+
+      <Links id="books" link="https://books.zuri.team" linkText="Zuri Books" />
+
+      <Links
+        id="book__python"
+        link="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>"
+        linkText="Python Books"
+      />
+
+      <Links
+        id="pitch"
+        link="https://background.zuri.team"
+        linkText="Background Check for Coders"
+      />
+
+      <Links
+        id="book__design"
+        link="https://books.zuri.team/design-rules"
+        linkText="Design Books"
+      />
+
+      <Icons />
+
+      <Footer />
     </div>
   );
 }
