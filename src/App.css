@@ -27,6 +27,10 @@ body {
   flex-direction: column;
 }
 
+#slack{
+  display: none; 
+}
+
 #profile__img {
   border-radius: 50%;
   height: 100px;

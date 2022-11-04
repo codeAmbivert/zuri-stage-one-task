@@ -9,7 +9,7 @@ function Profile() {
       <img src={profilePic} alt="profile pic" id="profile__img" />
 
       <p id="username">Annette Black</p>
-
+      <p id="slack">codingAmbivert</p>
       <div className="share_buttons">
         <a href="#" id="smallShareBtn">
           <img src={largeScreenShareBtn} alt="share_btn" />
