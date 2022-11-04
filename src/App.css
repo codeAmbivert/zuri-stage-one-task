@@ -10,7 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-.App {
+.App,
+.Home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,11 +101,93 @@ a {
 #footer__text {
   font-size: small;
   color: #6c6c6d;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__entity {
   margin: 5px 0;
 }
+
+/* ########################## */
+/* Contact page */
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
+  padding: 50px 10vw;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact h2 {
+  font-weight: 600;
+}
+#contact p {
+  color: #475467;
+  margin: 15px 0;
+}
+
+.form__text {
+  display: flex;
+  flex-direction: column;
+  color: #344054;
+  margin: 10px 0;
+}
+
+.form__text label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form_names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_names .form__text {
+  width: 48%;
+}
+
+input,
+textarea {
+  border: 0.5px solid #d0d5dd;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: "inter";
+}
+#agree_check_area {
+  display: flex;
+  margin-bottom: 13px;
+}
+#agree_check_area label {
+  font-size: 13px;
+  margin-left: 5px;
+}
+#btn__submit {
+  border: none;
+  background-color: #1570ef;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-family: "inter";
+  margin-top: 25px;
+  margin-bottom: 34px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 50px 10vw;
+  }
+}
+
+/* ################################ */
+/* Media queries */
 @media screen and (max-width: 500px) {
   #smallShareBtn {
     border: 2px dashed #eaecf0;
@@ -118,8 +201,18 @@ a {
   #largeShareBtn {
     display: none;
   }
+  form {
+    padding: 50px 5vw;
+  }
 
-  /* body {
-    background: black;
-  } */
+  .form_names {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .form_names .form__text {
+    /* max-width: 100%; */
+    width: 100%;
+  }
 }
