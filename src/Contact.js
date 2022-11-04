@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./Footer";
 
 function Contact() {
+  const name = "Onifade Titilope Chisom";
+
   return (
     <div id="contact">
       <form action="">
@@ -40,8 +42,7 @@ function Contact() {
         <div id="agree_check_area">
           <input type="checkbox" id="agree_check" />
           <label htmlFor="agree_check">
-            You agree to providing your data to &#123;name&#125; who may contact
-            you
+            You agree to providing your data to {name} who may contact you
           </label>
         </div>
         <button id="btn__submit">Send message</button>
